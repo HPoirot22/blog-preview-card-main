@@ -81,14 +81,6 @@ body {
   margin-top: 0.5rem;
 }
 
-/*.card-author{
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-*/
-
 /* Seção do Autor */
 .card-author {
   display: flex;
@@ -126,4 +118,40 @@ body {
 
     /* Centraliza o texto e elementos inline dentro do footer */
     text-align: center; 
+}
+
+/* Media Query para Telas Maiores (Desktop - A partir de 1440px) */
+@media (min-width: 1440px) {
+    
+    body {
+        /* Remove o padding lateral, se desejar um layout de ponta a ponta */
+        padding: 40px 0; 
+    }
+
+    .card-blog {
+        /* Aumenta a largura do card para o layout de desktop */
+        width: 100%;
+        max-width: 400px; 
+    }
+
+    .card-image {
+        height: 200px; /* Altura maior para a imagem */
+    }
+
+    .card-body {
+        padding: 30px 40px; /* Mais padding interno */
+    }
+
+    .card-title {
+        font-size: 28px; /* Título maior */
+    }
+
+    /* Se você tiver uma área com vários cards (um grid), você ajustaria o contêiner aqui: */
+    /* .cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 30px;
+        max-width: 1440px;
+        margin: 0 auto;
+    } */
 }
